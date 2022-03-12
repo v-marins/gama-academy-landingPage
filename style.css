@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: silver;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background: url(imagens/pexels-rostislav-uzunov-5011647.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 45px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 10px;
+}
+
+header ul li a:hover{
+    color: violet;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .nome h1{
+font-size: 60px;
+}
+
+.container .nome h5{
+    font-size: 25px;
+    }
+
+#arrow{
+    font-size: 30px;
+    cursor: pointer;
+    animation:blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink{
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input{
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background-color: thistle;
+    color:black;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+}
+
+.form button:hover{
+    background-color: violet;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .form{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .container .nome h1{
+        font-size: 30px;
+    }
+
+    .container .nome h5{
+        font-size: 15px;
+    }
+
+    #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+}
